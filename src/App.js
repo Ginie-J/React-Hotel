@@ -1,13 +1,29 @@
 import React from 'react'
 import './css/style.css'
-import Header from './pages/header'
-import Hero from './pages/Hero'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './pages/Layout'
+import Home from './pages/Home'
+import About from './pages/About'
+import Blog from './pages/Blog'
+import Service from './pages/Service'
+import Resort from './pages/Resort'
+import Contact from './pages/Contact'
 
 const App = () => {
   return (
     <>
-      <Header/>
-      <Hero/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout/>}>
+          <Route index element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/blog' element={<Blog/>}/>
+          <Route path='/service' element={<Service/>}/>
+          <Route path='/resort' element={<Resort/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>   
     </>
   )
 }

@@ -3,24 +3,23 @@ import {Container} from 'react-bootstrap';
 import Logo from '../res/img/ezhotel_logo.png'
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { GoSearch } from "react-icons/go";
-import Nav from '../components/Nav';
+import Nav from './Nav';
+import {Link} from "react-router-dom"
 
 const Header = () => {
     const navList = [
-        {title: "About", link: "link1"},
-        {title: "Service", link: "link2"},
-        {title: "Blog", link: "link3"},
-        {title: "Contact", link: "link4"},
-        {title: "Resort", link: "link5"}
+        {title: "About", link: "about"},
+        {title: "Service", link: "service"},
+        {title: "Blog", link: "blog"},
+        {title: "Contact", link: "contact"},
+        {title: "Resort", link: "resort"}
     ];
   return (
     <header id="header">
         <nav id='primary-header' className='navbar navbar-expand-lg py-4'>
             <Container fluid className='padding-side'>
                 <div className='d-flex justify-content-between align-items-center w-100'>
-                    <a href="index.html" className='navbar-brand'>
-                        <img src={Logo} className='logo' alt='hotel logo'/>
-                    </a>
+                    <Link to="/"><img src={Logo} className='logo' alt='hotel logo'/></Link>
                     <button className='navbar-toggler border-0 d-flex d-lg-none order-3 p-2 shadow-none'
                             type='button'
                             data-bs-toggler='offcanvas'
