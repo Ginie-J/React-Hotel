@@ -19,17 +19,18 @@ const Header = () => {
         <nav id='primary-header' className='navbar navbar-expand-lg py-4'>
             <Container fluid className='padding-side'>
                 <div className='d-flex justify-content-between align-items-center w-100'>
-                    <Link to="/"><img src={Logo} className='logo' alt='hotel logo'/></Link>
+                    <Link className='navbar-brand' to="/">
+                        <img src={Logo} className='logo' alt='hotel logo'/>
+                    </Link>
                     <button className='navbar-toggler border-0 d-flex d-lg-none order-3 p-2 shadow-none'
                             type='button'
                             data-bs-toggler='offcanvas'
                             data-bs-target='#ezNavbar'
-                            aria-controls='ezNavbar'
                             aria-expanded='false'>
                                 <HiBars3BottomRight className='f-30'/>
                     </button>
                     <div className='header-bottom offcanvas offcanvas-end'
-                         id='exNavbar'
+                         id='ezNavbar'
                          aria-labelledby='ezNavbaroffcanvasLabel'>
                         <div className='offcanvas-header px-4 pb-0'>
                             <button className='btn-close btn-close-black mt-2'

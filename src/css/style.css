@@ -367,7 +367,7 @@ a.nav-link {
 .abrow{
   width: 100%;
   position: absolute;
-  z-index: 1;
+  z-index: 5;
 }
 .hero-text{
     font-family: var(--heading-font);
@@ -385,9 +385,53 @@ a.nav-link {
     margin-top: 100px;
     margin-left: 100px;
     min-height: 600px;
+    background: rgba(255,255,255,0.7);
 }
 .reserv-text{
     font-family: var(--heading-font);
     color: var(--dark-color);
 }
- 
+/*SWIPER*/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-box{
+  width: 100%;
+  height: 800px;
+  position: absolute;
+}
+/*DATEPICKER*/
+.react-datepicker-wrapper{
+  width: 100%;
+}
+.react-datepicker__input-container .react-datepicker__calendar-icon{
+  top: 3px;
+  right: 5px;
+}
+.form-label{
+  font-weight: 600;
+}
+.duration-text{
+  font-weight: 600;
+  color: var(--dark-color);
+  font-size: 20px;
+}
