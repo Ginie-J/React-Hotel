@@ -435,3 +435,17 @@ a.nav-link {
   color: var(--dark-color);
   font-size: 20px;
 }
+.reserv-button:hover{
+  transform: scale(1.05);
+  transition: all 0.3 linear;
+}
+/*MAIN*/
+.main-container{
+  background-color: var(--primary-color-200);
+}
+.visible-img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: 200px;
+}

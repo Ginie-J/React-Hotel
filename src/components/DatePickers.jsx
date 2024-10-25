@@ -89,7 +89,7 @@ const DatePickers = () => {
           </div>
         </div>
         <div className="d-grid col-12">
-          <button className="btn btn-arrow btn-primary mt-3" onClick={handleReserv}>예약하기</button>
+          <button className="btn btn-arrow btn-primary mt-3 reserv-button" onClick={handleReserv} style={{fontWeight:'bold', color: '#333'}}>예약하기</button>
         </div>
       </form>
     </>
