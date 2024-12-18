@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# React를 이용한 호텔 홈페이지
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
